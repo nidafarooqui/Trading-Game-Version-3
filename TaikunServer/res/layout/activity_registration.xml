@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_btn"
+        android:layout_alignRight="@+id/repass_edt"
+        android:background="@color/orange"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repass_edt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/orange"
+        android:text="@string/register" />
+
+    <EditText
+        android:id="@+id/security_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel_btn"
+        android:layout_alignLeft="@+id/reg_btn"
+        android:layout_marginBottom="40dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/woolGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/security_edt"
+        android:layout_alignLeft="@+id/security_edt"
+        android:text="Security Hint" />
+
+    <EditText
+        android:id="@+id/repass_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/woolGoalState"
+        android:layout_alignLeft="@+id/wheatGoalState"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/wheatGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/repass_edt"
+        android:layout_alignLeft="@+id/pass_edt"
+        android:text="@string/repassword" />
+
+    <EditText
+        android:id="@+id/pass_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wheatGoalState"
+        android:layout_alignLeft="@+id/textViewTurn"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass_edt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="46dp"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewTurn"
+        android:layout_alignLeft="@+id/textViewTurn"
+        android:layout_marginBottom="18dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/usernameRegister"
+        android:layout_alignLeft="@+id/usernameRegister"
+        android:text="Username" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,29 @@
+package com.project.taikunserver;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
+
+public class TaikunGameActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_taikun_game);
+		
+		Intent intent = getIntent();
+		String ipAddress = intent.getStringExtra("IP Address");
+		String portNumber= intent.getStringExtra("Port");
+		
+		TextView tv = (TextView) findViewById(R.id.textView1);
+		tv.setText(ipAddress);
+		
+		TextView tv2 = (TextView) findViewById(R.id.textView2);
+		tv2.setText(portNumber);
+		
+	}
+}
+

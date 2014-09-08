@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="315dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Trade 1"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/popupspinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:text="for 1"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/popupspinner2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/offerTradeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dp"
+            android:minHeight="48dp"
+            android:minWidth="64dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Offer Trade" />
+
+        <Button
+            android:id="@+id/dismissButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:minHeight="48dp"
+            android:minWidth="64dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Dismiss" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Trading Menu"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/woolImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/wheatImage"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/wheatImage"
+        android:src="@drawable/woolcard" />
+
+    <ImageView
+        android:id="@+id/wheatImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/rockImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/wheatcard" />
+
+    <TextView
+        android:id="@+id/rocksGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rockImage"
+        android:layout_below="@+id/rockImage"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/rockTotal"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/wheatGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rocksGoalState"
+        android:layout_alignBottom="@+id/rocksGoalState"
+        android:layout_below="@+id/wheatImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wheatTotal"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/woolGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wheatGoalState"
+        android:layout_alignBottom="@+id/wheatGoalState"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_below="@+id/woolImage"
+        android:layout_marginRight="25dp"
+        android:text="@string/woolTotal"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/woolImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tradingProposalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No trade proposal"
+            android:typeface="monospace" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonDeclineTrade"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:background="@color/greenYellow"
+        android:minWidth="50dp"
+        android:text="New Trade Proposal"
+        android:textColor="@color/dark" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/wheatImage"
+        android:src="@drawable/rockcard" />
+
+</RelativeLayout>

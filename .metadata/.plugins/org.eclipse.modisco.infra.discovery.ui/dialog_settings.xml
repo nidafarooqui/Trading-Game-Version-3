@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.modisco.infra.discovery.ui.internal.dialogs.GenericParametersDialog:org.eclipse.modisco.java.discoverer.javaProject">
+		<item value="725" key="DIALOG_WIDTH"/>
+		<item value="89" key="DIALOG_Y_ORIGIN"/>
+		<item value="329" key="DIALOG_X_ORIGIN"/>
+		<item value="455" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.modisco.infra.discovery.ui.internal.dialogs.GenericParametersDialog:org.eclipse.modisco.java.composition.discoverer.fromJavaProject">
+		<item value="725" key="DIALOG_WIDTH"/>
+		<item value="89" key="DIALOG_Y_ORIGIN"/>
+		<item value="329" key="DIALOG_X_ORIGIN"/>
+		<item value="455" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

@@ -1,0 +1,44 @@
+package com.project.taikunserver;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class WelcomeScreenActivity extends Activity {
+	
+	Button playButton,helpButton;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_welcome_screen);
+		
+		playButton = (Button)findViewById(R.id.buttonStartGame);
+		helpButton = (Button)findViewById(R.id.buttonHelp);
+		
+		playButton.setOnClickListener( new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		
+		helpButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		
+	}
+}

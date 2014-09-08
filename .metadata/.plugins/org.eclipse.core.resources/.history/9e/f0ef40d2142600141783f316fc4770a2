@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.taikunserver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        android:debuggable="true"
+        <activity
+            android:name=".MainActivityLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".ServerActivity"
+            android:label="@string/title_activity_server_socket" >
+        </activity>
+        <activity
+            android:name=".ProposeScreenActivity"
+            android:label="@string/title_activity_propose_screen" >
+        </activity>
+        <activity
+            android:name=".TaikunGameActivity"
+            android:label="@string/title_activity_taikun_game" >
+        </activity>
+        <activity
+            android:name=".WelcomeScreenActivity"
+            android:label="@string/title_activity_welcome_screen" >
+        </activity>
+        <activity
+            android:name=".HelpPageActivityOne"
+            android:label="@string/title_activity_help_page_activity_one" >
+        </activity>
+        <activity
+            android:name=".HelpPageActivityTwo"
+            android:label="@string/title_activity_help_page_activity_two" >
+        </activity>
+        <activity
+            android:name=".HelpPageActivityFour"
+            android:label="@string/title_activity_help_page_activity_three" >
+        </activity>
+    </application>
+
+</manifest>

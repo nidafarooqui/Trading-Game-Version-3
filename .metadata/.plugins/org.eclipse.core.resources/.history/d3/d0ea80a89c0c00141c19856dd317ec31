@@ -1,0 +1,5 @@
+package com.heriotwatt.taikun;
+
+public class AppPreferences {
+
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.android.ide.eclipse.adt.feature:23.0.0.1245622"/>
+		<item value="com.android.ide.eclipse.adt.package.feature:23.0.0.1245622"/>
+		<item value="com.android.ide.eclipse.ddms.feature:23.0.0.1245622"/>
+		<item value="com.android.ide.eclipse.hierarchyviewer.feature:23.0.0.1245622"/>
+		<item value="com.android.ide.eclipse.traceview.feature:23.0.0.1245622"/>
+		<item value="com.objectaid.uml.addon:1.1.6"/>
+		<item value="com.objectaid.uml.seq:1.1.6"/>
+		<item value="com.objectaid.uml:1.1.6"/>
+		<item value="org.eclipse.cdt.gdb:7.0.0.201202111925"/>
+		<item value="org.eclipse.cdt:8.0.2.201202111925"/>
+		<item value="org.eclipse.draw2d.sdk:3.9.100.201405261516"/>
+		<item value="org.eclipse.draw2d:3.9.100.201405261516"/>
+		<item value="org.eclipse.egit.import:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.egit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.emf.common:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.emf.ecore:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.gef.all:3.9.100.201405261516"/>
+		<item value="org.eclipse.gef.examples:3.9.100.201405261516"/>
+		<item value="org.eclipse.gef.sdk:3.9.100.201405261516"/>
+		<item value="org.eclipse.gef:3.9.100.201405261516"/>
+		<item value="org.eclipse.help:1.4.1.v20120912-144938-8R7xFOXFLWUl7PpNBh_HIGkb4"/>
+		<item value="org.eclipse.jdt:3.8.2.v20130116-090414-8-8nFu3FNOfwKLRuqgXKIy9z0I83"/>
+		<item value="org.eclipse.jgit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.modisco.examples.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.examples.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.infrastructure.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.infrastructure.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.java.cdo.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.java.cdo.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.java.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.java.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.jee.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.jee.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.xml.feature:0.10.2.201301291118"/>
+		<item value="org.eclipse.modisco.xml.source:0.10.2.201301291118"/>
+		<item value="org.eclipse.platform:4.2.1.v20130118-173121-9MF7GHYdG0B5kx4E_SkfZV-1mNjVATf67ZAb7"/>
+		<item value="org.eclipse.rcp:4.2.2.v20130129-152330-7IARAABrMQkGSvMgQnUlz-DQz00h"/>
+		<item value="org.eclipse.uml2.doc:4.0.0.v20130114-0902"/>
+		<item value="org.eclipse.uml2.examples:4.0.0.v20130114-0902"/>
+		<item value="org.eclipse.uml2:4.0.2.v20130114-0902"/>
+		<item value="org.eclipse.zest:1.5.100.201405261516"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="133" key="DIALOG_Y_ORIGIN"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="433" key="DIALOG_X_ORIGIN"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+	</section>
+</section>

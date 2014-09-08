@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/imageButtonPageTwo"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_right_thick" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_left_thick" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/wheatImage"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/wheatImage"
+        android:src="@drawable/rockcard" />
+
+    <ImageView
+        android:id="@+id/wheatImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/woolImage"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wheatcard" />
+
+    <TextView
+        android:id="@+id/rocksGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rockImage"
+        android:layout_below="@+id/rockImage"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/rockTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/wheatGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rocksGoalState"
+        android:layout_alignBottom="@+id/rocksGoalState"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wheatTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/woolGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wheatGoalState"
+        android:layout_alignBottom="@+id/wheatGoalState"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_marginRight="20dp"
+        android:text="@string/woolTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF653A"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="How to Play"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rockImage"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_below="@+id/textViewTurn"
+        android:layout_marginTop="16dp"
+        android:text="This is a two player game where each player starts with 3 resources of ore, wheat and wool each." />
+
+    <ImageView
+        android:id="@+id/woolImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/imageButtonPageTwo"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/woolcard" />
+
+</RelativeLayout>

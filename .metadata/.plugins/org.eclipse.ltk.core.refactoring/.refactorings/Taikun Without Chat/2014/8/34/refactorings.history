@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;textViewPassord&apos; in &apos;com.project.taikunwithoutchat.R.id&apos; to &apos;forgetpass&apos;&#x0D;&#x0A;- Original project: &apos;Taikun Without Chat&apos;&#x0D;&#x0A;- Original element: &apos;com.project.taikunwithoutchat.R.id.textViewPassord&apos;&#x0D;&#x0A;- Renamed element: &apos;com.project.taikunwithoutchat.R.id.forgetpass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;textViewPassord&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.project.taikunwithoutchat{R.java[R[id^textViewPassord" name="forgetpass" references="true" setter="false" stamp="1408368767001" textual="false" version="1.0"/>
+</session>

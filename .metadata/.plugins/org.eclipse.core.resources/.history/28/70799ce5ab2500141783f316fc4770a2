@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/woolGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/wheatGoalState"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_below="@+id/woolImage"
+        android:layout_marginRight="25dp"
+        android:text="@string/woolTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/woolImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/rocksGoalState"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/wheatImage"
+        android:background="@color/darkOliveGreen"
+        android:src="@drawable/woolcard" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tradingProposalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No trade proposal"
+            android:typeface="monospace" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/wheatImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/rocksGoalState"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wheatcard" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/lawnGreen"
+        android:src="@drawable/rockcard" />
+
+    <TextView
+        android:id="@+id/rocksGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rockImage"
+        android:layout_below="@+id/rockImage"
+        android:layout_marginRight="23dp"
+        android:text="@string/rockTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/wheatGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wheatImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wheatTotal"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/darkorrange"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Trading Menu"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonDeclineTrade"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rockImage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_marginBottom="37dp"
+        android:background="@color/darkorrange"
+        android:shadowColor="@color/lightgray"
+        android:text="New Trade Proposal"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:visibility="visible" />
+
+</RelativeLayout>

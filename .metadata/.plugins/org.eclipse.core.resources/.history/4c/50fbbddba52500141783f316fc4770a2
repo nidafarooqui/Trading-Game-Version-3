@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/imageButtonPageThree"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_right_thick" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_left_thick" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:text="To win the game, you must have &quot;4 wheat and 5 ores&quot; OR &quot;4 wheat and 5 wool&quot;" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/wheatImage"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/wheatImage"
+        android:src="@drawable/rockcard" />
+
+    <ImageView
+        android:id="@+id/wheatImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/woolImage"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wheatcard" />
+
+    <TextView
+        android:id="@+id/wheatGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rockImage"
+        android:layout_centerHorizontal="true"
+        android:text="4"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/woolGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wheatGoalState"
+        android:layout_alignBottom="@+id/wheatGoalState"
+        android:layout_alignRight="@+id/woolImage"
+        android:layout_marginRight="20dp"
+        android:text="5"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/woolImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageButtonPageThree"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/woolcard" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/imageButtonPageThree"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/woolcard" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/wheatImage"
+        android:layout_alignTop="@+id/ImageView03"
+        android:src="@drawable/wheatcard" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/ImageView01"
+        android:src="@drawable/rockcard" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wheatGoalState"
+        android:layout_below="@+id/ImageView01"
+        android:text="4"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/rocksGoalState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/rockImage"
+        android:layout_marginLeft="26dp"
+        android:text="5"
+        android:textColor="@color/dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wheatGoalState"
+        android:layout_alignBottom="@+id/wheatGoalState"
+        android:layout_alignLeft="@+id/rocksGoalState"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/woolGoalState"
+        android:layout_alignParentRight="true"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF653A"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="How to Play"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+</RelativeLayout>

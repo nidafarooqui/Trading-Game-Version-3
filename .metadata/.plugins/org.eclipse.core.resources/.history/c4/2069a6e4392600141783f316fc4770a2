@@ -1,0 +1,78 @@
+package com.project.taikunserver;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class ProposeScreenActivity extends Activity {
+	
+	Button startTradeButton;
+	TextView rockState, wheatState, woolState;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_propose_screen);
+		
+		startTradeButton = (Button) findViewById(R.id.buttonStartTrade);
+		rockState = (TextView) findViewById(R.id.rocksGoalState);
+		wheatState = (TextView) findViewById(R.id.wheatGoalState);
+		woolState = (TextView) findViewById(R.id.woolGoalState);
+		
+		//get values of the rock, wheat and wool state to update the text view 
+		//and the chat message and trade actions to write to the file
+		Intent intent2 = getIntent();
+		String wool = intent2.getStringExtra("Wool");
+		String rock = intent2.getStringExtra("Ore");
+		String wheat = intent2.getStringExtra("Wheat");
+		String chatMessage= intent2.getStringExtra("Chat");
+		String tradeActions= intent2.getStringExtra("Trade Actions");
+		int roundNumber = intent2.getIntExtra("Round Number", 0);
+		String roundNum = Integer.toString(roundNumber);
+		
+		if(rock!= null)
+		{
+			rockState.setText(rock);
+		}
+		else
+		{
+			rockState.setText(3);
+		}
+		if(wool!= null)
+		{
+			woolState.setText(wool);
+		}
+		else
+		{
+			woolState.setText(3);
+		}
+		if(wheat!= null)
+		{
+			wheatState.setText(wheat);
+		}
+		else
+		{
+			wheatState.setText(3);
+		}
+		
+		if(rockState.getText().toString().equals("4"))
+		
+		startTradeButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(ProposeScreenActivity.this, ServerActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		
+	}
+}
